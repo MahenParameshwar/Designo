@@ -53,7 +53,7 @@
 }
 
 .hero-home .button{
-    width: 142px;
+    width: 150px;
     height: 56px;
     border-radius: 8px;
     @include flex(flex, row, center, center);
@@ -61,6 +61,7 @@
     color: $black;
     letter-spacing: 1px;
     background: $white;
+    font-weight: 500;
 }
 
 .hero-home .button:hover{

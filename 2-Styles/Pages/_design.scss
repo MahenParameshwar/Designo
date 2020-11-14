@@ -1,0 +1,139 @@
+.view-design{
+    width: 100%;
+    height: 640px;
+    margin-top: 160px;
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 
+                        'web app'
+                        'web graphic';
+}
+
+.web-design{
+    grid-area: web;
+    background: url(/assets/home/desktop/image-web-design-large.jpg)
+}
+
+.app-design{
+    grid-area: app;
+    background: url(/assets/home/desktop/image-app-design.jpg);
+}
+
+.graphic-design{
+    grid-area: graphic;
+    background: url(/assets/home/desktop/image-graphic-design.jpg);
+}
+
+.design{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 15px;
+    position: relative;
+    @include flex(flex,column,center,center);
+    text-align: center;
+    color: $white;
+    cursor: pointer;
+}
+
+
+
+.design-text{
+    height: 94px;
+    z-index: 1;
+    @include flex(flex,column,space-between,center)
+}
+
+.design-text > h2{
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.design-text > h4{
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 5px;
+    font-weight: 500;
+    position: relative;
+    width: 197px;
+}
+
+.design-text > h4::after{
+    content: '';
+    @include absolute-el(unset, 0px, 6px, unset);
+    right: 0;
+    width: 6px;
+    height: 10px;
+    background: url(/assets/shared/desktop/icon-right-arrow.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.design::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    border-radius: 15px;
+}
+
+.design:hover::before{
+    background: rgba($color: $peach, $alpha: 0.6);
+}
+
+@media screen and(max-width:1200px){
+    .view-design{
+        height: 649px;
+        margin-top: 120px;
+        display: grid;
+        gap: 30px;
+        grid-template-areas: 
+                            'web'
+                            'app'
+                            'graphic';
+    }
+    
+    
+    .web-design{
+        background: url(/assets/home/tablet/image-web-design.jpg)
+    }
+    
+    .app-design{
+        background: url(/assets/home/tablet/image-app-design.jpg);
+    }
+    
+    .graphic-design{
+        background: url(/assets/home/tablet/image-graphic-design.jpg);
+    }
+}
+
+@media screen and(max-width:768px){
+    .view-design{
+        justify-content: center;
+    }
+
+    .design{
+        width: 327px;
+        height: 250px;
+    }
+
+    .web-design{
+        background: url(/assets/home/mobile/image-web-design.jpg)
+    }
+    
+    .app-design{
+        background: url(/assets/home/mobile/image-app-design.jpg);
+    }
+    
+    .graphic-design{
+        background: url(/assets/home/mobile/image-graphic-design.jpg);
+    }
+
+    .design-text > h2{
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,116 @@
+.feature-container{
+    margin-top: 160px;
+    display: grid;
+    grid-template-areas: 
+                        'pass reso frie';
+    gap:50px
+}
+
+.feature{
+    height: 412px;
+    @include flex(flex, column, space-between, center);
+}
+
+.feature-text{
+    width: 100%;
+    @include flex(flex, column, center, center );
+    text-align: center;
+}
+
+.feature-text > h4{
+    margin: 69px 0 32px;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 5px;
+    color: $black;
+    font-weight: 500;
+}
+
+.feature-text > p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.feature > img{
+    width: 220px;
+}
+
+.passionate{
+    grid-area: pass;
+}
+
+.resourceful{
+    grid-area: reso;
+}
+
+.friendly{
+    grid-area: frie;
+}
+
+@media screen and (max-width : 1200px){
+    .feature-container{
+        margin-top: 160px;
+        display: grid;
+        grid-template-areas: 
+                            'pass' 'reso' 'frie';
+        gap:50px
+    }
+
+    .feature-text > h4{
+        margin: 0 0 16px;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 5px;
+        color: $black;
+        font-weight: 500;
+    }
+
+    .feature{
+        height: 220px;
+        width: 100%;
+        @include flex(flex, row, center, center);
+    }
+
+    .feature-text{
+        flex: 1;
+        @include flex(flex, column, center, flex-start);
+        text-align: left;
+        padding-left: 30px;
+    }
+
+}
+
+@media screen and (max-width : 768px){
+    .feature-container{
+        margin-top: 320px;
+        display: grid;
+        width: 327px;
+        height: 1396px;
+        grid-template-areas: 
+                            'pass' 'reso' 'frie';
+        
+    }
+
+    .feature-text > h4{
+        margin: 40px 0 32px;
+        font-size: 20px;
+        line-height: 26px;
+        letter-spacing: 5px;
+        color: $black;
+        font-weight: 500;
+    }
+
+    .feature{
+        width: 100%;
+        @include flex(flex, column, space-between, center);
+    }
+
+    .feature-text{
+        @include flex(flex, column, center, center);
+        text-align: center;
+        padding-left: 30px;
+        
+    }
+
+    
+}
