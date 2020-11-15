@@ -52,24 +52,6 @@
     font-weight: 500;
 }
 
-.hero-home .button{
-    width: 150px;
-    height: 56px;
-    border-radius: 8px;
-    @include flex(flex, row, center, center);
-    font-size: 15px;
-    color: $black;
-    letter-spacing: 1px;
-    background: $white;
-    font-weight: 500;
-}
-
-.hero-home .button:hover{
-    cursor: pointer;
-}
-
-
-
 @media screen and (max-width : 1200px){
     .hero-home{
         height: 843px;

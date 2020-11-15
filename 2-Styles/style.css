@@ -2,8 +2,6 @@
 *, *::before, *::after {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
@@ -282,6 +280,7 @@ nav > a, nav > a > img {
       -ms-flex-align: center;
           align-items: center;
   margin: 0px auto;
+  padding-bottom: 292px;
   position: relative;
 }
 
@@ -295,6 +294,40 @@ nav > a, nav > a > img {
   .main-container {
     width: 100%;
   }
+}
+
+.button {
+  width: 150px;
+  height: 56px;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  color: #1D1C1E;
+  letter-spacing: 1px;
+  background: white;
+  font-weight: 500;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 74px;
+  background-color: #1D1C1E;
+  height: 393px;
 }
 
 .hero-home {
@@ -389,34 +422,6 @@ nav > a, nav > a > img {
   line-height: 48px;
   letter-spacing: 0px;
   font-weight: 500;
-}
-
-.hero-home .button {
-  width: 150px;
-  height: 56px;
-  border-radius: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 15px;
-  color: #1D1C1E;
-  letter-spacing: 1px;
-  background: white;
-  font-weight: 500;
-}
-
-.hero-home .button:hover {
-  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
@@ -884,6 +889,103 @@ nav > a, nav > a > img {
             align-items: center;
     text-align: center;
     padding-left: 30px;
+  }
+}
+
+.lets-talk {
+  position: absolute;
+  bottom: -146px;
+  height: 292px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #E7816B;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lets-talk-text {
+  margin-left: 95px;
+  width: 459px;
+  height: 148px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.lets-talk-text > h1 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 500;
+}
+
+.lets-talk > a {
+  margin-right: 95px;
+}
+
+@media screen and (max-width: 1200px) {
+  .lets-talk {
+    height: 236px;
+    width: 575px;
+    padding: 57px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lets-talk > a {
+    margin: 0;
+  }
+  .lets-talk-text {
+    margin: 0;
+    width: 448px;
+    height: 148px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .lets-talk {
+    height: 251px;
+    width: 279px;
+    padding: 64px 24px;
+  }
+  .lets-talk-text {
+    width: 279px;
+    height: 163px;
+  }
+  .lets-talk-text > h1 {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+.lets-talk{
+    position: absolute;
+    bottom:-146px;
+    height: 292px;
+    width: 100%;
+    border-radius: 15px;
+    background-color: $peach;
+    @include flex(flex,row,space-between,center)
+}
+
+.lets-talk-text{
+    margin-left: 95px;
+    width: 459px;
+    height:148px;
+    color:$white;
+    @include flex(flex,column,space-between,flex-start)
+}
+
+.lets-talk-text > h1{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 500;
+}
+
+.lets-talk > a{
+    margin-right: 95px;
+}
+
+
+@media screen and (max-width : 1200px){
+    .lets-talk{
+        height: 236px;
+        width: 575px;
+        padding: 57px;
+        @include flex(flex,column,space-between,center);
+    }
+    .lets-talk > a{
+        margin: 0;
+    }
+    .lets-talk-text{
+        margin: 0;
+        width: 448px;
+        height: 148px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 768px){
+    .lets-talk{
+        height: 251px;
+        width: 279px;
+        padding: 64px 24px;
+    }
+    
+    .lets-talk-text{
+        
+        width: 279px;
+        height: 163px;
+        
+    }
+
+    .lets-talk-text > h1{
+        font-size: 30px;
+    }
+}

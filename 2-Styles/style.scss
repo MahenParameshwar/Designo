@@ -8,9 +8,11 @@
 //Layout
 @import './Layout/header';
 @import './Layout/main-container';
-
+@import './Layout/button';
+@import './Layout/footer';
 
 //1.INDEX STYLES
 @import './Pages/index';
 @import './Pages/design';
-@import './Pages/features'
+@import './Pages/features';
+@import './Pages/lets-talk'
