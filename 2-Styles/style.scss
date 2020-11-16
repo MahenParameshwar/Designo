@@ -10,10 +10,18 @@
 @import './Layout/main-container';
 @import './Layout/button';
 @import './Layout/footer';
+@import './Layout/about-location';
 
 //1.INDEX STYLES
 @import './Pages/index';
 @import './Pages/design';
 @import './Pages/features';
 @import './Pages/lets-talk';
-@import './Layout/socilicon'
+@import './Layout/socilicon';
+
+
+//2.About Company
+@import './Pages/company';
+
+//3.Locations
+@import './Pages/location'

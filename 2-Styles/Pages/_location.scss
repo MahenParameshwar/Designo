@@ -1,0 +1,144 @@
+.locations{
+    width: 100%;
+    height: 1042px;
+    @include flex(flex, column, space-between, center)
+}
+
+.locations > .location:nth-child(2){
+    @include flex(flex, row-reverse, space-between, center)
+}
+
+.location{
+    width: 100%;
+    height: 326px;
+    @include flex(flex,row,space-between,center)
+}
+
+.location-desc{
+    width: 730px;
+    height: 326px;
+    padding: 88px 95px;
+    @include flex(flex,column,space-between,flex-start);
+}
+
+.location-desc > h2{
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 2px;
+    color: $peach;
+}
+
+.location-details{
+    height: 76px;
+    width: 100%;
+    @include flex(flex, row,space-between , center)
+}
+
+p{
+    font-weight: 500;
+    color: $black;
+}
+
+.location-image{
+    flex: 1;
+    height: 100%;
+    border-radius: 15px;
+   
+} 
+
+
+.location-can{
+    background: url(/assets/locations/desktop/image-map-canada.png);
+    background-size: cover;
+}
+
+.location-aus{
+    background: url(/assets/locations/desktop/image-map-australia.png);
+    background-size: cover;
+}
+
+.location-uk{
+    background: url(/assets/locations/desktop/image-map-united-kingdom.png);
+    background-size: cover;
+}
+
+@media screen and(max-width:1200px){
+    .locations{
+        width: 100%;
+        height: 2275px;
+    }
+
+    .location{
+        width: 100%;
+        height: 683px;
+        @include flex(flex,column-reverse,center,center)
+    }
+
+    .locations > .location:nth-child(2){
+        @include flex(flex, column, center, center)
+    }
+
+    .location-desc{
+        padding: 88px 75px;
+    }
+
+    .location-image{
+        flex: 1;
+        width: 100%;
+    }
+
+    .location-can{
+        background: url(/assets/locations/tablet/image-map-canada.png);
+        background-size: cover;
+    }
+
+    .location-aus{
+        background: url(/assets/locations/tablet/image-map-australia.png);
+        background-size: cover;
+    }
+
+    .location-uk{
+        background: url(/assets/locations/tablet/image-map-uk.png);
+        background-size: cover;
+    }
+}
+
+@media screen and(max-width:768px){
+    .locations{
+        width: 100%;
+        height: 2222px;
+        @include flex(flex, column, space-between, center)
+    }
+
+    .location{
+        width: 100%;
+        height: 714px;
+        @include flex(flex, column, center,center)
+    }
+
+    .location-desc{
+        width: 100%;
+        height: 394px;
+        padding: 80px 24px;
+        @include flex(flex, column, center,center)
+    }
+
+    .location-desc > h2{
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 0.1rem;
+        margin-bottom: 24px;
+    }
+
+    .location-details{
+        height: 234px;
+        @include flex(flex,column,space-between,center);
+        text-align: center;
+    }
+
+    .location-image{
+        border-radius: unset;
+    }
+
+}
