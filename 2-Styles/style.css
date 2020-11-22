@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
 header {
   width: 100%;
   height: 155px;
@@ -320,6 +324,8 @@ nav > a, nav > a > img {
   letter-spacing: 1px;
   background: white;
   font-weight: 500;
+  outline: none;
+  border: none;
 }
 
 .button:hover {
@@ -2052,6 +2058,479 @@ p {
   }
   .location-image {
     border-radius: unset;
+  }
+}
+
+.design-banner {
+  width: 100%;
+  height: 252px;
+  background-color: #E7816B;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.design-info {
+  width: 391px;
+  height: 124px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.design-info > h1 {
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.design-info > p {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  .design-banner {
+    height: 320px;
+    border-radius: 0;
+  }
+  .design-info {
+    width: 327px;
+    height: 110px;
+  }
+  .design-info > h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .design-info > p {
+    font-size: 15px;
+  }
+}
+
+.contact-us {
+  width: 100%;
+  height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E7816B;
+  border-radius: 15px;
+}
+
+.contact-us-text {
+  width: 635px;
+  height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-us-text::before {
+  content: '';
+  width: 640px;
+  height: 640px;
+  background-image: url(/assets/contact/desktop/bg-pattern-hero-desktop.svg);
+  position: absolute;
+  top: unset;
+  right: 0px;
+  bottom: 0px;
+  left: unset;
+  z-index: 1;
+}
+
+.contact-us-text-wrap {
+  width: 540px;
+  height: 184px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  color: white;
+}
+
+.contact-us-text-wrap > p {
+  width: 445px;
+  font-weight: 400;
+  color: white;
+}
+
+.contact-us-form {
+  width: 474px;
+  height: 480px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#contact-form {
+  width: 380px;
+  height: 379px;
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+.form-item {
+  width: 380px;
+  height: 49px;
+  position: relative;
+}
+
+.form-item:not(:first-child) {
+  margin-top: 25px;
+}
+
+.form-item:last-child {
+  height: 102px;
+}
+
+label {
+  display: none;
+}
+
+input, textarea {
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  position: absolute;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding-left: 15px;
+  resize: none;
+  z-index: 2;
+}
+
+input:focus {
+  border-bottom: 3px solid white;
+}
+
+.form-item > p {
+  text-align: right;
+  padding-right: 36px;
+  position: relative;
+  font-weight: 400;
+  z-index: 1;
+  display: none;
+}
+
+.form-item > p::after {
+  content: '';
+  position: absolute;
+  top: unset;
+  right: 8px;
+  bottom: unset;
+  left: unset;
+  width: 20px;
+  height: 20px;
+  background-image: url(/assets/contact/desktop/icon-error.svg);
+}
+
+#contact-form > button {
+  position: absolute;
+  top: unset;
+  right: 0px;
+  bottom: 0px;
+  left: unset;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-us {
+    height: 711px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  .contact-us-text {
+    width: 100%;
+    height: 269px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    overflow: visible;
+  }
+  .contact-us-text::before {
+    position: absolute;
+    top: -103px;
+    right: unset;
+    bottom: unset;
+    left: -121px;
+  }
+  .contact-us-text-wrap {
+    width: 573px;
+    height: 158px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 71px;
+  }
+  .contact-us-text-wrap > p {
+    width: 100%;
+  }
+  .contact-us-form {
+    width: 100%;
+    height: 442px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #contact-form {
+    width: 573px;
+    height: 371px;
+    margin-top: 0px;
+  }
+  .form-item {
+    width: 100%;
+    height: 38px;
+  }
+  input, textarea {
+    border-bottom: 1px solid white;
+  }
+  input {
+    height: 38px;
+  }
+  input:focus {
+    border-bottom: 3px solid white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-us {
+    height: 764px;
+    border-radius: 0px;
+  }
+  .contact-us-text {
+    width: 100%;
+    height: 305px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-us-text::after {
+    content: '';
+    width: 292px;
+    height: 292px;
+    background-image: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+    position: absolute;
+    top: 0px;
+    right: -90px;
+    bottom: unset;
+    left: unset;
+    z-index: 1;
+  }
+  .contact-us-text::before {
+    width: 292px;
+    height: 292px;
+    background-image: url(/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg);
+    position: absolute;
+    top: 0px;
+    right: unset;
+    bottom: unset;
+    left: -90px;
+  }
+  .contact-us-text-wrap {
+    width: 100%;
+    max-width: 327px;
+    height: 185px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .contact-us-text-wrap > p {
+    width: 100%;
+    height: 125px;
+    font-weight: 400;
+  }
+  .contact-us-form {
+    width: 100%;
+    height: 431px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #contact-form {
+    width: 86.4%;
+    height: 410px;
+    margin-top: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form-item {
+    width: 100%;
+    height: 26px;
+  }
+  .form-item:not(:first-child) {
+    margin-top: 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-leaf::after {
+    content: '';
+    position: absolute;
+    top: unset;
+    right: -166px;
+    bottom: -72px;
+    left: unset;
+    width: 1006px;
+    height: 341px;
+    background: url(/assets/shared/desktop/bg-pattern-leaf.svg);
   }
 }
 /*# sourceMappingURL=style.css.map */

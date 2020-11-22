@@ -1,0 +1,44 @@
+.design-banner{
+    width: 100%;
+    height: 252px;
+    background-color: $peach;
+    border-radius: 15px;
+    @include flex(flex,row,center,center)
+}
+
+.design-info{
+    width: 391px;
+    height: 124px;
+    @include flex(flex,column,space-between,center);
+    text-align: center;
+}
+
+.design-info > h1{
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.design-info > p{
+    font-weight: 400;
+}
+
+@media screen and(max-width:768px){
+    .design-banner{
+        height: 320px;
+        border-radius: 0;
+    }
+
+    .design-info{
+        width: 327px;
+        height: 110px;
+    }
+
+    .design-info > h1{
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .design-info > p{
+        font-size: 15px;
+    }
+}
