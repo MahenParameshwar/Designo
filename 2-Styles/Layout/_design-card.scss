@@ -1,0 +1,111 @@
+.design-card-container {
+    width: 100%;
+    height: 988px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(auto,350px));
+    grid-template-rows: repeat(1,minmax(auto,478px));
+    margin-top: 160px;
+    gap: 20px;
+    position: relative;
+}
+
+.design-card {
+    @include flex(flex, column, flex-start, center);
+    cursor: pointer;
+}
+
+.design-card > img {
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.design-card-text {
+    width: 100%;
+    height: 158px;
+    @include flex(flex, column, space-between, center);
+    text-align: center;
+    padding: 32px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: rgba(253, 243, 240, 1);
+
+}
+
+.design-card-text > p {
+    font-weight: 400;
+}
+
+.peach{
+    color: $peach;
+}
+
+@media screen and (max-width: 1200px) {
+    .design-card-container {
+        width: 689px;
+        display: grid;
+        grid-template-columns: repeat(1,minmax(auto,689px));
+        grid-template-rows: repact(1,minmax(auto,310px));
+        margin-top: 120px;
+        height: 2030px;
+    }
+
+    
+    div.design-card {
+        
+        @include flex(flex, row, flex-start, center);
+    
+    }
+    
+    .design-card > img {
+        width: 339px;
+        height: 310px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 15px;
+    }
+    
+    div.design-card-text {
+        width: 350px;
+        height: 100%;
+        padding: 109px 41px 108px 32px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 15px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .design-card-container {
+        width: 327px;
+        display: grid;
+        height: 988px;
+        grid-template-columns: repeat(1,minmax(auto,327px));
+        grid-template-rows: repact(1,minmax(auto,478px));
+        height: 3068px;
+        margin-top: 120px;
+    }
+
+    
+    div.design-card {
+        @include flex(flex, column, flex-start, center);
+    }
+    
+    .design-card > img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: unset;
+    }
+    
+    div.design-card-text {
+        width: 100%;
+        height: 158px;
+        padding: 32px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: unset;
+    }
+    
+}
