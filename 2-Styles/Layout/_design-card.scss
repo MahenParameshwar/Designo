@@ -1,9 +1,8 @@
 .design-card-container {
     width: 100%;
-    height: 988px;
     display: grid;
-    grid-template-columns: repeat(3,minmax(auto,350px));
-    grid-template-rows: repeat(1,minmax(auto,478px));
+    grid-template-columns: repeat(auto-fill,minmax(auto,350px));
+    grid-template-rows: 478px;
     margin-top: 160px;
     gap: 20px;
     position: relative;
@@ -44,10 +43,11 @@
     .design-card-container {
         width: 689px;
         display: grid;
-        grid-template-columns: repeat(1,minmax(auto,689px));
-        grid-template-rows: repact(1,minmax(auto,310px));
+        grid-template-columns: repeat(auto-fill,minmax(auto,689px));
+        grid-template-rows: 310px;
+        gap: 50px;
         margin-top: 120px;
-        height: 2030px;
+        
     }
 
     
@@ -80,10 +80,10 @@
     .design-card-container {
         width: 327px;
         display: grid;
-        height: 988px;
-        grid-template-columns: repeat(1,minmax(auto,327px));
-        grid-template-rows: repact(1,minmax(auto,478px));
-        height: 3068px;
+        
+        grid-template-columns: repeat(auti-fill,minmax(auto,327px));
+        grid-template-rows: 478px;
+        
         margin-top: 120px;
     }
 

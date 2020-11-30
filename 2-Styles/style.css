@@ -326,10 +326,14 @@ nav > a, nav > a > img {
   font-weight: 500;
   outline: none;
   border: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.button:hover {
+a.button:hover {
   cursor: pointer;
+  background-color: #FFAD9B;
+  color: white;
 }
 
 footer {
@@ -922,7 +926,8 @@ footer {
   display: -ms-grid;
   display: grid;
   gap: 30px;
-      grid-template-areas: 'web app' 'web graphic';
+      grid-template-areas: 'web app'
+ 'web graphic';
 }
 
 .web-design {
@@ -994,6 +999,7 @@ footer {
   line-height: 48px;
   letter-spacing: 2px;
   font-weight: 500;
+  color: white;
 }
 
 .design-text > h4 {
@@ -1041,7 +1047,9 @@ footer {
     display: -ms-grid;
     display: grid;
     gap: 30px;
-        grid-template-areas: 'web' 'app' 'graphic';
+        grid-template-areas: 'web'
+ 'app'
+ 'graphic';
   }
   .web-design {
     background: url(/assets/home/tablet/image-web-design.jpg);
@@ -2534,13 +2542,12 @@ input:focus {
 
 .design-card-container {
   width: 100%;
-  height: 988px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(auto, 350px))[3];
-      grid-template-columns: repeat(3, minmax(auto, 350px));
-  -ms-grid-rows: (minmax(auto, 478px))[1];
-      grid-template-rows: repeat(1, minmax(auto, 478px));
+  -ms-grid-columns: (minmax(auto, 350px))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(auto, 350px));
+  -ms-grid-rows: 478px;
+      grid-template-rows: 478px;
   margin-top: 160px;
   gap: 20px;
   position: relative;
@@ -2605,12 +2612,12 @@ input:focus {
     width: 689px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(auto, 689px))[1];
-        grid-template-columns: repeat(1, minmax(auto, 689px));
-    -ms-grid-rows: repact(1, minmax(auto, 310px));
-        grid-template-rows: repact(1, minmax(auto, 310px));
+    -ms-grid-columns: (minmax(auto, 689px))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(auto, 689px));
+    -ms-grid-rows: 310px;
+        grid-template-rows: 310px;
+    gap: 50px;
     margin-top: 120px;
-    height: 2030px;
   }
   div.design-card {
     display: -webkit-box;
@@ -2649,12 +2656,10 @@ input:focus {
     width: 327px;
     display: -ms-grid;
     display: grid;
-    height: 988px;
-    -ms-grid-columns: (minmax(auto, 327px))[1];
-        grid-template-columns: repeat(1, minmax(auto, 327px));
-    -ms-grid-rows: repact(1, minmax(auto, 478px));
-        grid-template-rows: repact(1, minmax(auto, 478px));
-    height: 3068px;
+    -ms-grid-columns: (minmax(auto, 327px))[auti-fill];
+        grid-template-columns: repeat(auti-fill, minmax(auto, 327px));
+    -ms-grid-rows: 478px;
+        grid-template-rows: 478px;
     margin-top: 120px;
   }
   div.design-card {
@@ -2693,10 +2698,10 @@ input:focus {
   margin-top: 160px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(auto, 541px))[2];
+  -ms-grid-columns: (minmax(auto, 541px));
       grid-template-columns: repeat(2, minmax(auto, 541px));
   gap: 30px;
-  -ms-grid-rows: (minmax(auto, 308px))[1];
+  -ms-grid-rows: (minmax(auto, 308px));
       grid-template-rows: repeat(1, minmax(auto, 308px));
 }
 
@@ -2717,9 +2722,9 @@ input:focus {
     width: 100%;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (minmax(auto, 689px))[1];
+    -ms-grid-columns: (minmax(auto, 689px));
         grid-template-columns: repeat(1, minmax(auto, 689px));
-    -ms-grid-rows: (minmax(auto, 200px))[2];
+    -ms-grid-rows: (minmax(auto, 200px));
         grid-template-rows: repeat(2, minmax(auto, 200px));
   }
   .web {
@@ -2739,7 +2744,7 @@ input:focus {
     display: -ms-grid;
     display: grid;
     margin-top: 96px;
-    -ms-grid-columns: (minmax(auto, 327px))[1];
+    -ms-grid-columns: (minmax(auto, 327px));
         grid-template-columns: repeat(1, minmax(auto, 327px));
     -ms-grid-rows: 250px;
         grid-template-rows: 250px;
