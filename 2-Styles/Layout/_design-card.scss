@@ -6,17 +6,24 @@
     margin-top: 160px;
     gap: 20px;
     position: relative;
+    transition: all 0.2s ease-in ;
 }
 
 .design-card {
     @include flex(flex, column, flex-start, center);
     cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.design-card:hover{
+    transform: scale(1.05);;
 }
 
 .design-card > img {
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    pointer-events: none;
 }
 
 .design-card-text {
@@ -28,7 +35,15 @@
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
     background: rgba(253, 243, 240, 1);
+    pointer-events: none;
+}
 
+.active .design-card-text{
+    background-color: $peach;
+}
+
+.active .design-card-text > *{
+    color: $white;
 }
 
 .design-card-text > p {
@@ -56,6 +71,7 @@
         @include flex(flex, row, flex-start, center);
     
     }
+
     
     .design-card > img {
         width: 339px;
@@ -67,7 +83,7 @@
     
     div.design-card-text {
         width: 350px;
-        height: 100%;
+        height: 310px;
         padding: 109px 41px 108px 32px;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: unset;

@@ -2551,6 +2551,8 @@ input:focus {
   margin-top: 160px;
   gap: 20px;
   position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .design-card {
@@ -2568,12 +2570,20 @@ input:focus {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.design-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .design-card > img {
   width: 100%;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+  pointer-events: none;
 }
 
 .design-card-text {
@@ -2597,6 +2607,15 @@ input:focus {
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   background: #fdf3f0;
+  pointer-events: none;
+}
+
+.active .design-card-text {
+  background-color: #E7816B;
+}
+
+.active .design-card-text > * {
+  color: white;
 }
 
 .design-card-text > p {
@@ -2643,7 +2662,7 @@ input:focus {
   }
   div.design-card-text {
     width: 350px;
-    height: 100%;
+    height: 310px;
     padding: 109px 41px 108px 32px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: unset;

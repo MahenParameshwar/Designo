@@ -9,4 +9,18 @@ window.onload = ()=>{
         mobileNavList.classList.toggle('active')
     })
 
+    const designCardArr = [...document.querySelectorAll('.design-card')];
+    designCardArr.forEach(card=>{
+        card.addEventListener('mouseenter',(e)=>e.target.classList.add('active'));
+        card.addEventListener('mouseleave',(e)=>e.target.classList.remove('active'));
+
+    })
+    // designCardArr.foreach((card)=>{
+    //     card.addEventListener('click',()=>console.log(e.target))
+    // })
+    
+
+    
+    
+
 }
